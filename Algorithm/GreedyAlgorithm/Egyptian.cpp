@@ -1,4 +1,5 @@
 // Egyptian form using greedy algorithm
+
 #include<iostream>
 using namespace std;
 void printEgyptian(int nr,int dr)
