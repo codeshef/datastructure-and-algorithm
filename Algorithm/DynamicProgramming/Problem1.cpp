@@ -3,6 +3,7 @@ the total number of ways we can form a number 'N'
 using the sum of the given three numbers.
 (allowing repetitions and different arrangements).*/
 
+
 #include<iostream>
 using namespace std;
 
