@@ -6,5 +6,7 @@
                 
                 DataStructures:
                 
+                1.Juggling algorithm for rotation of array
+                
                 Algorithms:
                 
