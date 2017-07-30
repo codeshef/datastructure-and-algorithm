@@ -1,0 +1,62 @@
+// C++ program to print all permutations with duplicates
+
+#include<bits/stdc++.h>
+#include<algorithm>
+using namespace std;
+
+// using rotate() in STL
+
+void permutate(string str,string out){
+
+   if(str.size() == 0){
+     
+    cout<<out<<endl;
+    
+    return;
+  
+   }
+
+  // One by one move all characters at the beginning of  out
+
+   for(int i=0;i<str.size();i++){
+
+    permutate(str.substr(1),out + str[0]);
+    
+    rotate(str.begin(),str.begin()+1,str.end());
+ 
+   }
+
+
+}
+
+
+// using next_permutation()
+
+void permute(string str){
+ 
+  // sort the string in lexicographically ascending order 
+
+ sort(str.begin(),str.end());
+
+ // printing permutation while there is next permutation
+
+ do{
+
+    cout<<str<<endl;
+
+  }while(next_permutation(str.begin(),str.end()));
+
+}
+
+int main(){
+  
+    string str = "CBA";
+    permute(str);
+
+    cout<<endl<<endl;
+   
+     string str1 = "ABC";
+     permutate(str, "");
+   
+     return 0;
+}
