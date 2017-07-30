@@ -48,4 +48,21 @@
              (max_ending_here is used for this). And keep track of maximum sum contiguous segment among all positive 
              segments (max_so_far is used for this). Each time we get a positive sum compare it with max_so_far and
              update max_so_far if it is greater than max_so_far
+             
+             2. Multiple of 3
+             
+             Algorithm: isMutlipleOf3(n)
+          
+          1) Make n positive if n is negative.
+          2) If number is 0 then return 1
+          3) If number is 1 then return 0
+          4) Initialize: odd_count = 0, even_count = 0
+          5) Loop while n != 0
+           a) If rightmost bit is set then increment odd count.
+           b) Right-shift n by 1 bit
+           c) If rightmost bit is set then increment even count.
+           d) Right-shift n by 1 bit
+          6) return isMutlipleOf3(odd_count - even_count)
+          
+           Time Complexity : O(log(n))
                 
