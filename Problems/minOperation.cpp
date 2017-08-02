@@ -1,4 +1,9 @@
 
+/*Given a number N the task is to find an optimal solution to reach N from 0 using 2 operations ie
+1. Double the number 
+2. Add one to the number*/
+
+
 #include<iostream>
 using namespace std;
 
